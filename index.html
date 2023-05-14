@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Bot</title>
+    <style>
+        body {
+            background-image: url("chatbot1.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;  
+            background-size: cover;
+        }
+    </style>
+
+    <link rel="stylesheet" href="chat.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+ 
+    <h1> CHAT SBD </h1>
+    <h4> <em>A created by Justin </em></h4>
+    <h2><em> How to understand each other better?</em></h2>
+    <h3>" CHAT SBD xích lại gần nhau hơn - Giải pháp tự động hoá tư vấn,
+        giải đáp, hỗ trợ và tiếp nhận phản hồi từ tất cả các bên"
+    </h3>
+   <div class = "chat-icon">
+     <p> Tư vấn như người thật </p>
+     <p> Nhanh chóng </p>
+     <p> Tiện Lợi. </p>
+    </div>
+    <!-- CHAT BAR BLOCK -->
+    <div class="chat-bar-collapsible">
+        <button id="chat-button" type="button" class="collapsible">Chat with us!
+            <i id="chat-icon" style="color: #fff;" class="fa fa-fw fa-comments-o"></i>
+        </button>
+
+        <div class="content">
+            <div class="full-chat-block">
+                <!-- Message Container -->
+                <div class="outer-container">
+                    <div class="chat-container">
+                        <!-- Messages -->
+                        <div id="chatbox">
+                            <h5 id="chat-timestamp"></h5>
+                            <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
+                        </div>
+                            <div class = "bot-response-quick-replies">
+                                <div class = "quick-relies-text" data = "true"> 
+                                    <span>Thông tin bạn muốn tìm kiếm là...</span>
+                                </div>
+                                <div class = "quick-replies-botton">
+                                    <div data-conversation-quick-reply-title = " Chính Sách, Quy Định" class ="single-button">
+                                    <img src="chatbot2.jpg">
+                                            <span>Chính Sách, Quy Định</span>
+                                    </div>
+                                    <div data-conversation-quick-reply-title = " Sản Phẩm, Rule Ghi Nhận" class ="single-button">
+                                    <img src="chatbot2.jpg">
+                                            <span>Sản phẩm, Rule Ghi Nhận</span>
+                                    </div>
+                                    <div data-conversation-quick-reply-title = " Tra Soát KPI và INCENTIVE" class ="single-button">
+                                    <img src="chatbot2.jpg">
+                                            <span>Tra Soát KPI và INCENTIVE</span>
+                                    </div>
+                                    <div data-conversation-quick-reply-title = " ABOUT ME" class ="single-button">
+                                    <img src="chatbot2.jpg">
+                                            <span>Contact Stakehoder</span>
+                                    </div>
+                                    <div data-conversation-quick-reply-title = " CONTACT STAKEHODER" class ="single-button">
+                                    <img src="chatbot2.jpg">
+                                            <span>About Me</span>        
+                                    </div>
+                                </div>
+                            </div>
+
+                        <!-- User input box -->
+                        <div class="chat-bar-input-block">
+                            <div id="userInput">
+                                <input id="textInput" class="input-box" type="text" name="msg"
+                                    placeholder="Tap 'Enter' to send a message">
+                                <p></p>
+                            </div>
+
+                            <div class="chat-bar-icons">
+                                <i id="chat-icon" style="color: crimson;" class="fa fa-fw fa-heart"
+                                    onclick="heartButton()"></i>
+                                <i id="chat-icon" style="color: #333;" class="fa fa-fw fa-send"
+                                    onclick="sendButton()"></i>
+                            </div>
+                        </div>
+
+                        <div id="chat-bar-bottom">
+                            <p></p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <main>
+        <a href = "javascript:void(0)" data-toggle = "modal" data-target ="#clsoe-popup2" class = "link-tuvan-fix">
+        <img src="chatbot2.jpg">
+        "Bấm vào chat with us để được hỗ trợ"
+        </a>
+    </main>
+</body>
+<script src="jquery.min.js"></script>
+<script src="responses.js"></script>
+<script src="chat.js"></script>
+
+</html>
+
+
+
+
+
+
+
