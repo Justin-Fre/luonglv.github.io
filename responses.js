@@ -115,9 +115,14 @@ function initData(){
         '<br> 42. Product holding(PH) là gì?' +
         '<br> 43. Các lưu ý theo sản phẩm ' );
     questionAnswer.set('TRA SOÁT KPI VÀ INCENTIVE','Câu hỏi bạn muốn đặt là:' +
-        '<br> 1.A. <br> 2.B');
+        '<br> 1.Quy trình tra soát KPI cho vị trí CSR' +
+        '<br> 2.Quy trình tra soát Incentive vị trí CSR' +
+        '<br> 3.Link báo cáo KPI' +
+        '<br> 4.Link báo cáo Incentive');
     questionAnswer.set('CONTACT STAKEHOLDER','Câu hỏi bạn muốn đặt là:' +
-        '<br> 1.A. <br> 2.B');
+        '<br> 1.Đơn vị BMT (chính sách/sản phẩm)' +
+        '<br> 2.Đơn vị BSC-HO (nghiệp vụ)' +
+        '<br> 3.Đơn vị EDA - BIC (số liệu)');
     questionAnswer.set('ABOUT ME','Câu hỏi bạn muốn đặt là:' +
         '<br> 1.A. <br> 2.B');
     questionAnswer.set('DAO là gì dao','DAO là mã cán bộ bán hàng, mã cán bộ bán hàng lấy theo dữ liệu DAO cập nhật trên hệ thống dựa theo file nhân sự HR gửi hàng tháng.<br> Đây là thông tin quan trọng để lấy số lượng sản phẩm bán.<br> MAP thông tin mã Staff ID trên file nhân sự và mã Staff ID trên dữ liệu DAO( TH không map được DAO sẽ có dữ liệu');
@@ -277,7 +282,7 @@ function initData(){
         '<br> - Tỷ lệ hoàn thành KPI hàng tháng tính bằng: ' +
         '<br> Công thức: %KPI = Tổng (Tỷ lệ hoàn thành từng tiêu chí chính * Trọng số của tiêu chí chính)' +
         '<br> - Tỷ lệ hoàn thành KPI trong 1 khoảng thời gian:' +
-        '<br> Là bình quân tỷ lệ hoàn thành KPI trong khoảng thời gian xét KPI (bao gồm thời gian thử việc' +
+        '<br> Là bình quân tỷ lệ hoàn thành KPI trong khoảng thời gian xét KPI (bao gồm thời gian thử việc)' +
         '<br> Công thức: %KPI = (Tổng %KPI các tháng)/số tháng tính KPI' +
         '<br> Ví dụ: Quý II, CSR có tỷ lệ hoàn thành KPI các tháng 4,5,6 lần lượt là 126%, 90%, 150%. Vậy tỷ lệ hoàn thành KPI quý II là:'+
         '<br> (126% + 90% + 150%)/3 = 122%');
@@ -294,10 +299,10 @@ function initData(){
         '<br> Hà Nội:           1.2' +
         '<br> Hồ Chí Minh:      1.0' +
         '<br> Tỉnh:             0.9' +
-        '<br>B. Hệ số chức danh ' +
+        '<br>B. Hệ số chức danh (chỉ áp dụng với vị trí CSR) ' +
         '<br>Chuyên viên: 1.0' +
         '<br>Chuyên viên chính: 1.2' +
-        '<br>C. Hệ số thâm niên' +
+        '<br>C. Hệ số thâm niên (chỉ áp dụng với vị trí CSR)' +
         '<br> Hệ số thâm niên là hệ số hỗ trợ chỉ tiêu cho các chức danh mới bắt đầu làm việc tại VPBank hoặc điều chuyển nội bộ từ vị trí Back office sang lực lượng bán hàng' +
         '<br> Vị trí CSR' +
         '<br> Thử việc: 0' +
@@ -305,16 +310,16 @@ function initData(){
         '<br> Tháng bắt đầu tính hỗ trợ chỉ tiêu căn cứ vào tháng hiệu lực của hợp đồng lao động/quyết định điều chuyển.' +
         '<br> - Nếu ngày Onboard nằm trong khoảng từ ngày 01 đến ngày 15, xét KPI và áp dụng hệ số hỗ trợ tại tháng bắt đầu.' +
         '<br> Nếu ngày Onboard nằm trong khoảng từ ngày 16 đến hết tháng, xét KPI và áp dụng hệ số hỗ trợ từ tháng tiếp theo liền kề' +
-        '<br>D. Hệ số mùa vụ' +
+        '<br>D. Hệ số mùa vụ (chỉ áp dụng với vị trí CSR)' +
         '<br> Tháng 01: 0.7' +
         '<br> Tháng 02: 0.8' +
         '<br> Tháng 03,04,05,06,07,08,09: 1' +
         '<br> Tháng 10: 1.1' +
         '<br> Tháng 11: 1.15' +
         '<br> Tháng 12: 1.2' +
-        '<br>E. Hệ số điều chỉnh đặc biệt' +
+        '<br>E. Hệ số điều chỉnh đặc biệt (chỉ áp dụng với vị trí CSR)' +
         '<br> Hệ số điều chỉnh đặc biệt được áp dụng theo các giai đoạn kinh doanh khó khăn, các tình huống bất khả kháng do thiên tai/dịch bệnh...được quyết định bởi Giám đốc Khối KHCN' +
-        '<br>F. Hệ số công việc đặc thù(chỉ áp dụng đối với vị trí CSR)' +
+        '<br>F. Hệ số công việc đặc thù (chỉ áp dụng đối với vị trí CSR)' +
         '<br> Là hệ số áp dụng đối với CSR được phân công thực hiện một số công việc đặc thù khác.' +
         '<br> Bảng hệ số sẽ căn cứ trên vị trí công việc đặc thù, được quy định chi tiết khi ban hành bộ KPI và Hướng dẫn đánh giá chi tiết KPI của DVKHCN, được GDK uỷ quyền cho GDTT BSC quyết định theo từng thời kỳ, cụ thể được định nghĩa từng vị trí trong phụ lục 03.' +
         '<br> Lưu ý: Năng suất lao động tiêu chuẩn là năng suất áp dụng hệ số khu vực, hệ số chức danh,' +
@@ -337,7 +342,7 @@ function initData(){
     questionAnswer.set('Các hệ số ảnh hưởng quy đổi điểm',' A. Hệ số ảnh hưởng quy đổi điểm là các hệ số nhân trực tiếp khi quy đổi doanh số của sản phẩm/dịch vụ ra điểm.' +
         '<br> B. Hệ số cơ chế bán trực tiếp:' +
         '<br> 1. Hệ số tái cấp: áp dụng 0.5 cho sản phẩm tái thấu chi. Với khoản vay thấu chi staff tai cấp: chỉ áp dụng hệ số staff.' +
-        '<br> 2. Hệ số Staff: áp duingj 0.5 cho sản phẩm thấu chi/thẻ tín dụng cấp cho CBNV Vpbank' +
+        '<br> 2. Hệ số Staff: áp dụng 0.5 cho sản phẩm thấu chi/thẻ tín dụng cấp cho CBNV Vpbank' +
         '<br> 3. Hệ số phân khúc:' +
         '<br> - AF: 1.2' +
         '<br> - MAF: 1.1' +
@@ -366,7 +371,7 @@ function initData(){
         '<br> 7. Khách hàng MAF: Tổng điểm tối đa là 100' +
         '<br> Điểm trần không áp dụng với các vị trí bán chuyên biệt 1 sản phẩm - được BMT quy định theo từng thời kỳ - chỉ mở trần sản phẩm chuyên biệt.' +
         '<br> - Quy định về tổng điểm giảm ròng tối đa.' +
-        '<br> 1. TD VND: Điểmm giảm ròng tối đa là -50' +
+        '<br> 1. TD VND: Điểm giảm ròng tối đa là -50' +
         '<br> 2. CASA VND: Điểm giảm ròng tối đa là -30' +
         '<br> 3. TD/CASA ngoại tệ: Điểm giảm ròng tối đa là -50');    
     questionAnswer.set('Công thức tính thưởng',' CBBH được tính lương khuyến khích(LKK) theo công thức sau:'+
@@ -420,7 +425,7 @@ function initData(){
         '<br> - Trường hợp CBBH đang ở chức danh CVCC, khi đủ điều kiện thăng tiến 1 cấp trở lên, được điều chỉnh tăng lương (khi chưa vượt quá dải lương).' +
         'Từng trường hợp sẽ được xét duyệt theo đúng nguyên tắc điều chỉnh lương hiện hành của Khối QTNNL.' +
         'br> - Đối với đơn vị có nhu cầu tuyển dụng, ưu tiên lựa chọn các ứng viên là CBBH đủ điều kiện thăng tiến trước khi lựa chọn ứng viên khác.');
-    questionAnswer.set('Tiêu chuẩn thăng tiến','- Thăng tiến một cấp: là thăng tiến lên chức danh liền trên theo tháp thăng tiến. CBBh được xét thăng tiến thường nếu:' +
+    questionAnswer.set('Tiêu chuẩn thăng tiến','- Thăng tiến một cấp: là thăng tiến lên chức danh liền trên theo tháp thăng tiến. CBBH được xét thăng tiến thường nếu:' +
         '<br> + Kết quả KPI trong 6 tháng gần nhất đạt 120;' +
         '<br> + Có tối đa 1 tháng KPI đạt từ 85-95%;' +
         '<br> + Không có tháng nào đạt KPI dưới 85%.' +
@@ -462,9 +467,11 @@ function initData(){
     questionAnswer.set('Các vị trí thuộc nhóm 2 tính LKD','Các vị trí thuộc nhóm 2 là tính LKD: TLS 247, RO, DSA Premium, DSA CC HN-HCM, CC Digital backend, PSE UPL Deaura');
     questionAnswer.set('Các vị trí thuộc nhóm 3 tính LKD','Các vị trí thuộc nhóm 3 là tính LKD: Telecaller, RO Secured, MSO , DSA OM, Digital UPL, Digital CC, CFT_DC_5, CFT_DC_4, CFT_DC_3, CFT_DC_2, CFT_DC_1, CCA OM, RM Prime Province, RM Prime HN-HCM, LS Hub - Province - Auto');
     questionAnswer.set('Các vị trí thuộc nhóm 4 tính LKD','Các vị trí thuộc nhóm 4 là tính LKD: LS Branch HN- HCM, LS Branch Province, LS Hub - Biz & Housing, LS - Project, LS Hub - Province - Mix, LS Hub - Race');
-
-
-
+    questionAnswer.set('Đơn vị BMT (chính sách/sản phẩm)','1.Vương' +
+        '<br> 2. Trang');
+    questionAnswer.set('Đơn vị BSC-HO (nghiệp vụ)','1.KPI: NHANNC');
+    questionAnswer.set('Đơn vị EDA - BIC (số liệu)','1.KPI: BINHNT66' +
+        '<br> 2. KPI/INCENTIVE: LUONGLV');
     return questionAnswer  ;
     /*<br> 1. CHÍNH SÁCH VÀ QUY ĐỊNH +
     <br> 2. SẢN PHẨM, RULE GHI NHẬN +
