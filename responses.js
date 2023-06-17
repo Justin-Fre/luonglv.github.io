@@ -64,10 +64,8 @@ function initData(){
         '<br> 31. Các vị trị thuộc nhóm 2 tính LKD.' +
         '<br> 32. Các vị trí thuộc nhóm 3 tính LKD.' +
         '<br> 33. Phụ lục 01: Điểm sàn, nhòm tính LKD theo chức danh - vị trí' +
-        '<br> 34. Phụ lục 02.01: Nguyên tắc ghi nhận TD mới.' +
-        '<br> 35. Phụ lục 02.02: Nguyên tắc ghi nhận cũ.' +
-        '<br> 36. Phụ lục 02.03: khoản CASA mới.' +
-        '<br> 37. Phụ lục 02.04: khoản CASA cũ.' +
+        '<br> 34. Phụ lục 02.01: Nguyên tắc ghi nhận TD.' +
+        '<br> 36. Phụ lục 02.02: Nguyên tắc ghi nhận khoản CASA.' + 
         '<br> 38. Phụ lục 03. Bảng phân nhóm theo vị trí công việc đặc thù.' +
         '<br> 39. Tổng điểm quy đổi?');
     questionAnswer.set('SẢN PHẨM, RULE GHI NHẬN','Câu hỏi bạn muốn đặt là:' +
@@ -467,11 +465,29 @@ function initData(){
     questionAnswer.set('Các vị trí thuộc nhóm 2 tính LKD','Các vị trí thuộc nhóm 2 là tính LKD: TLS 247, RO, DSA Premium, DSA CC HN-HCM, CC Digital backend, PSE UPL Deaura');
     questionAnswer.set('Các vị trí thuộc nhóm 3 tính LKD','Các vị trí thuộc nhóm 3 là tính LKD: Telecaller, RO Secured, MSO , DSA OM, Digital UPL, Digital CC, CFT_DC_5, CFT_DC_4, CFT_DC_3, CFT_DC_2, CFT_DC_1, CCA OM, RM Prime Province, RM Prime HN-HCM, LS Hub - Province - Auto');
     questionAnswer.set('Các vị trí thuộc nhóm 4 tính LKD','Các vị trí thuộc nhóm 4 là tính LKD: LS Branch HN- HCM, LS Branch Province, LS Hub - Biz & Housing, LS - Project, LS Hub - Province - Mix, LS Hub - Race');
-    questionAnswer.set('Đơn vị BMT (chính sách/sản phẩm)','1.Vương' +
-        '<br> 2. Trang');
-    questionAnswer.set('Đơn vị BSC-HO (nghiệp vụ)','1.KPI: NHANNC');
-    questionAnswer.set('Đơn vị EDA - BIC (số liệu)','1.KPI: BINHNT66' +
-        '<br> 2. KPI/INCENTIVE: LUONGLV');
+    questionAnswer.set('Phụ lục 02.01: Nguyên tắc ghi nhận TD','<img src="nguyentacghinhan_td.jpg">');
+    questionAnswer.set('Phụ lục 02.02: Nguyên tắc ghi nhận CASA','<img src="nguyentacghinhan_casa.jpg">');
+        questionAnswer.set('Phụ lục 03: Bảng phân nhóm theo vị trí công việc đặc thù','<img src="nhom_csr.jpg">');
+    questionAnswer.set('Phụ lục 01: Điểm sàn, nhóm tính LKD theo chức danh - vị trí','<img src="Diem_san.jpg">' +
+        '<br> <img src="nhom.jpg"> ');
+    questionAnswer.set('Đơn vị BMT (chính sách/sản phẩm)','1. vuonghq2@vpbank.com.vn' +
+        '<br> 2. trangdtk2@vpbank.com.vn');
+    questionAnswer.set('Đơn vị BSC-HO (nghiệp vụ)','1. KPI: nhannc@vpbank.com.vn' +
+        '<br> 2. NSLD: muint@vpbank.com.vn');
+    questionAnswer.set('Đơn vị EDA - BIC (số liệu)','1. KPI: binhnt66@vpbank.com.vn' +
+        '<br> 2. KPI/INCENTIVE: luonglv@vpbank.com.vn');
+    questionAnswer.set('Quy trình tra soát KPI cho vị trí CSR','Anh/chị đơn vị truy cập theo đường link bên đưới để biết được thông tin' +
+        '<br> >>> <a href="https://vpb-my.sharepoint.com/:p:/r/personal/luonglv_vpbank_com_vn/Documents/20231104_Timeline.pptx?d=w198a28dea6034c74b9d946dcfe56c5d1&csf=1&web=1&e=MGAMAr&nav=eyJzSWQiOjI1NywiY0lkIjoyNjYxMTUxNjEyfQ" target="_blank">Quy trình timeline</a> <<<');
+    questionAnswer.set('Quy trình tra soát INCENTIVE cho vị trí CSR','Anh/chị đơn vị truy cập theo đường link bên đưới để biết được thông tin' +
+        '<br> >>> <a href="https://vpb-my.sharepoint.com/:p:/r/personal/luonglv_vpbank_com_vn/Documents/20231104_Timeline.pptx?d=w198a28dea6034c74b9d946dcfe56c5d1&csf=1&web=1&e=MGAMAr&nav=eyJzSWQiOjI1NywiY0lkIjoyNjYxMTUxNjEyfQ" target="_blank">Quy trình timeline</a> <<<');
+    questionAnswer.set('Link báo cáo KPI','Anh/chị đơn vị truy cập theo đường link bên đưới để biết được thông tin' +
+        '<br> >>> <a href="https://bicc.vpbank.com.vn/d/?n=/BICC_RB_Monthly_BSC_KPI_DVKH.xlsx" target="_blank">Link báo cáo KPI</a> <<<');
+    questionAnswer.set('Link báo cáo incentive','Anh/chị đơn vị truy cập theo đường link bên đưới để biết được thông tin' +
+        '<br> >>> <a href="https://bicc.vpbank.com.vn/d/?n=/BICC_RB_Adhoc_BMT_INCENTIVE_2023_T4.xlsx" target="_blank">Link báo cáo INCENTIVE</a> <<<');
+
+
+
+
     return questionAnswer  ;
     /*<br> 1. CHÍNH SÁCH VÀ QUY ĐỊNH +
     <br> 2. SẢN PHẨM, RULE GHI NHẬN +
@@ -540,7 +556,6 @@ function getAnswer(input){
     document.getElementById("textInput").value = input;
       document.getElementById("chat-icon-send").click();
 }
-
 
 
 
