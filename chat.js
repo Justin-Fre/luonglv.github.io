@@ -32,7 +32,6 @@ function getTime() {
     let time = hours + ":" + minutes;
     return time;
 }
-
 // Gets the first message
 function firstBotMessage() {
     let firstMessage = "Ngày hôm nay của bạn thế nào?"
@@ -45,7 +44,6 @@ function firstBotMessage() {
 }
 
 firstBotMessage();
-
 // Retrieves the response
 function getHardResponse(userText) {
     let botResponse = getBotResponse(userText);
@@ -75,6 +73,103 @@ function getResponse() {
 
 }
 
+function chinhsach(){
+    /*buttonSendText("CHÍNH SÁCH, QUY ĐỊNH");*/
+    let userText = $("#textInput").val();
+
+    if (userText == "") {
+        userText = "CHÍNH SÁCH, QUY ĐỊNH";
+    }
+
+    let userHtml = '<p class="userText"><span>' + userText + '</span></p>';
+
+    $("#textInput").val("");
+    $("#chatbox").append(userHtml);
+    document.getElementById("chat-bar-bottom").scrollIntoView(true);
+
+    setTimeout(() => {
+        getHardResponse(userText);
+    },1000)
+}
+
+  
+function sanpham(){
+    /*buttonSendText("CHÍNH SÁCH, QUY ĐỊNH");*/
+    let userText = $("#textInput").val();
+
+    if (userText == "") {
+        userText = "SẢN PHẨM, RULE GHI NHẬN";
+    }
+
+    let userHtml = '<p class="userText"><span>' + userText + '</span></p>';
+
+    $("#textInput").val("");
+    $("#chatbox").append(userHtml);
+    document.getElementById("chat-bar-bottom").scrollIntoView(false);
+
+    setTimeout(() => {
+        getHardResponse(userText);
+    }, 1000)
+}
+
+function trasoat(){
+    /*buttonSendText("CHÍNH SÁCH, QUY ĐỊNH");*/
+    let userText = $("#textInput").val();
+
+    if (userText == "") {
+        userText = "TRA SOÁT KPI VÀ INCENTIVE";
+    }
+
+    let userHtml = '<p class="userText"><span>' + userText + '</span></p>';
+
+    $("#textInput").val("");
+    $("#chatbox").append(userHtml);
+    document.getElementById("chat-bar-bottom").scrollIntoView(true);
+
+    setTimeout(() => {
+        getHardResponse(userText);
+    }, 1000)
+}
+
+function contact(){
+    /*buttonSendText("CHÍNH SÁCH, QUY ĐỊNH");*/
+    let userText = $("#textInput").val();
+
+    if (userText == "") {
+        userText = "CONTACT STAKEHOLDER";
+    }
+
+    let userHtml = '<p class="userText"><span>' + userText + '</span></p>';
+
+    $("#textInput").val("");
+    $("#chatbox").append(userHtml);
+    document.getElementById("chat-bar-bottom").scrollIntoView(true);
+
+    setTimeout(() => {
+        getHardResponse(userText);
+    }, 1000)
+}
+
+function aboutme(){
+    /*buttonSendText("CHÍNH SÁCH, QUY ĐỊNH");*/
+    let userText = $("#textInput").val();
+
+    if (userText == "") {
+        userText = "ABOUT ME";
+    }
+
+    let userHtml = '<p class="userText"><span>' + userText + '</span></p>';
+
+    $("#textInput").val("");
+    $("#chatbox").append(userHtml);
+    document.getElementById("chat-bar-bottom").scrollIntoView(true);
+
+    setTimeout(() => {
+        getHardResponse(userText);
+    }, 0)
+}
+
+
 // Handles sending text via button clicks
 function buttonSendText(sampleText) {
     let userHtml = '<p class="userText"><span>' + sampleText + '</span></p>';
@@ -96,6 +191,7 @@ function sendButton() {
 function heartButton() {
     buttonSendText("Heart clicked!")
 }
+
 
 // Press enter to send a message
 $("#textInput").keypress(function (e) {
