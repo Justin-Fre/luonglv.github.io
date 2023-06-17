@@ -63,9 +63,9 @@
 }
 
 
-.single-button {
+.single-button-1 {
  	width: 70%;
-    max-width: 400px;
+    max-width: 250px;
     height: 50px;
     line-height: 50px;
     border-radius: 15px;
@@ -74,7 +74,7 @@
     font-family: Sarabun;
     font-weight: bold;
     font-size: 14px;
-    text-align: center;
+    text-align: left;
     color: #240365;
     padding-left: 2px;
     margin-right: 10px;
@@ -82,12 +82,91 @@
     bottom: 80px;
     left: 0;
     right: 0;
-    margin: auto;
+    margin: left;
     z-index: 999;
     flex-wrap: wrap;
     text-transform: uppercase;
-    position: center;
+    position: left;
 }
+
+.single-button-2 {
+ 	width: 70%;
+    max-width: 250px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 15px;
+    background: #FCFAF9;
+    box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.16);
+    font-family: Sarabun;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: left;
+    color: #240365;
+    padding-left: 2px;
+    margin-right: 10px;
+    margin-top: 10px;
+    bottom: 80px;
+    left: 0;
+    right: 0;
+    margin: left;
+    z-index: 999;
+    flex-wrap: wrap;
+    text-transform: uppercase;
+    position: auto;
+}
+
+.single-button-3 {
+ 	width: 70%;
+    max-width: 250px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 15px;
+    background: #FCFAF9;
+    box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.16);
+    font-family: Sarabun;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: left;
+    color: #240365;
+    padding-left: 2px;
+    margin-right: 10px;
+    margin-top: 10px;
+    bottom: 80px;
+    left: 0;
+    right: 0;
+    margin: left;
+    z-index: 999;
+    flex-wrap: wrap;
+    text-transform: uppercase;
+    position: left;
+}
+
+.single-button-4 {
+ 	width: 70%;
+    max-width: 250px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 15px;
+    background: #FCFAF9;
+    box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.16);
+    font-family: Sarabun;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: left;
+    color: #240365;
+    padding-left: 2px;
+    margin-right: 10px;
+    margin-top: 10px;
+    bottom: 80px;
+    left: 0;
+    right: 0;
+    margin: left;
+    z-index: 999;
+    flex-wrap: wrap;
+    text-transform: uppercase;
+    position: left;
+}
+
 
 .quick-relies-text{
  	width: 70%;
@@ -98,12 +177,13 @@
     background: #e0e0e9;
     border-bottom-left-radius: 2px;
     margin-left: 10px;
-    text-align: center;
+    text-align: left;
 }
 .quick-replies-botton {
 	width: 100%;
-	justify-content: center;
+	justify-content: left;
 	margin-top: 15px;
+	
 }
 
 .chat-container:: -webkit-scrollbar{
